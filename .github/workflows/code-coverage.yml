@@ -1,0 +1,12 @@
+name: My First Workflow
+
+# 1. Choose what triggers the run
+on: [push, workflow_dispatch]
+
+# 2. Define the automation tasks
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, world!"
